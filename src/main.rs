@@ -1,9 +1,9 @@
 use rand::Rng;
 use std::{thread, time};
 
-const SIZE: usize = 100;         // Taille de la grille (20x20)
+const SIZE: usize = 20;         // Taille de la grille (20x20)
 const DENSITY_Q: f64 = 0.8;       // Densité initiale de la forêt (0.0 à 1.0)
-const SPREAD_P: f64 = 1.0;        // Probabilité que le feu se propage à une case voisine
+const SPREAD_P: f64 = 0.8;        // Probabilité que le feu se propage à une case voisine
 
 const TREE: char = '🌲';         // Représente un arbre vivant
 const FIRE: char = '🔥';         // Représente un arbre en feu
